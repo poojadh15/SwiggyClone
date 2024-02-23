@@ -1,6 +1,5 @@
 import React, {UserContext, lazy, Suspense, useState, useEffect} from "react";
 import ReactDOM from "react-dom/client";
-//here no need to add extension of .js and .jsx it will still work
 import { Header } from "./components/Header"
 import Body from "./components/Body";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
