@@ -6,7 +6,6 @@ const About = () => {
     useEffect(()=>{
         setInterval(()=>{
             //setcount(count++);
-            console.log("OP");
         }, 1000)
         return ()=>{
             console.log("returned");

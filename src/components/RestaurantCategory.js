@@ -2,7 +2,7 @@ import { useState } from "react";
 import List from "./ItemList";
 
 const RestaurantCategory = ({header, data, expand, str}) => {
-    //console.log(props);
+    console.log(data);
     const list = data;
     return (
         <>
@@ -14,7 +14,7 @@ const RestaurantCategory = ({header, data, expand, str}) => {
                 {
                     expand && list.map((item, index)=> <List key={index} props={item?.card?.info}  str={str}/>)
                 }
-                
+               
             </div>
 
         </>

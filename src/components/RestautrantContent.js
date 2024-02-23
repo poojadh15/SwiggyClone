@@ -7,7 +7,6 @@ import UserContext from "./UserContext";
 
 const RestaurantCOntent = () => {
     const data = useContext(UserContext);
-    console.log(data)
     const str = "dummydata"
     //const [expand, setexpand] = useState(false);
     const params = useParams();
@@ -29,7 +28,7 @@ const RestaurantCOntent = () => {
                     <h3>{cuisines.join(", ")}</h3>
                     <p>{costForTwoMessage}</p>
                 </div>
-                <h3 className="">{avgRating} Starts***</h3>
+                <h3 className="">{avgRating} Stars***</h3>
             </div>
             {/* {
                 itemCards.map((item) => (
@@ -39,7 +38,7 @@ const RestaurantCOntent = () => {
             {/* This is for accordian  */}
             {
                 categories.map((category, index) => <RestaurantCategory key={index}
-                    header={category?.card?.card?.title} data={category?.card?.card?.itemCards} expand={false} str={str}/>)
+                    header={category?.card?.card?.title} data={category?.card?.card?.itemCards} expand={true} str={str}/>)
             }
         </div>
     );

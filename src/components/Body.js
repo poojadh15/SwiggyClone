@@ -5,6 +5,7 @@ import ShimmerCards from "./shimmerUI";
 import { Link } from "react-router-dom";
 import useStatus from "../utils/useStatus";
 import UserContext from "./UserContext";
+import App from "./test";
 
 const Body = () => {
     const status = useStatus();
@@ -27,7 +28,9 @@ const Body = () => {
     //console.log(data);
     //const dataList = dataObj;
     return dataList.length === 0 ? <ShimmerCards /> : (
+       
         <div className="body">
+             <App />
             <div>
                 <span>UserName</span>
                 <input className="border border-black rounded-lg" value={loggedInUser}

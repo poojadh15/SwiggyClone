@@ -6,7 +6,7 @@ class UserClass2 extends React.Component{
     }
     render (){
         return (
-            <h1>Hiiii</h1>
+            <h1>User Data Page</h1>
         );
     }
 }
